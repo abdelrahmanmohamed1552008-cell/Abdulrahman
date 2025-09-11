@@ -137,11 +137,14 @@ body {
     grid-template-columns: 630px 630px;
 }
 
-.menu-header h2 {
+.menu-header,
+.Desserts {
     color: var(--main-color);
-    padding: 40px 20px;
+    font-size: 28px;
+    padding: 20px 10px;
     text-align: center;
-    margin-bottom: -40px;
+    margin-bottom: -50px;
+    font-family: var(--font);
 }
 
 .m-images {
@@ -156,22 +159,18 @@ body {
     border-radius: 10px;
 }
 
-.menu li {
-    color: var(--text-color);
-    font-size: 16px;
-    text-align: center;
-}
-
 .menu p {
     color: var(--main-color);
-    font-size: 25px;
+    font-size: 28px;
     margin: 0;
     font-weight: bold;
+    font-family: var(--font);
 }
 
 .every {
     color: var(--main-color);
-    font-size: 30px;
+    font-size: 25px;
+    text-align: center;
 }
 
 /* reservation page */
@@ -220,8 +219,14 @@ body {
 .reservation-form button:hover {
     background-color: navy;
 }
+
 @media (max-width: 768px) {
     .menu {
-        grid-template-columns: 50px;
+        grid-template-columns: 390px;
+    }
+
+    .staff-cards {
+        flex-direction: column;
+        align-items: center;
     }
 }
