@@ -28,9 +28,8 @@ body {
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .nav-links a {
@@ -131,10 +130,9 @@ body {
 
 /* menu page */
 .menu {
-    padding: 40px 20px;
     text-align: center;
     display: grid;
-    grid-template-columns: 630px 630px;
+    grid-template-columns: 1fr 1fr;
 }
 
 .menu-header,
@@ -222,7 +220,11 @@ body {
 
 @media (max-width: 768px) {
     .menu {
-        grid-template-columns: 390px;
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        gap: 12px;
     }
 
     .staff-cards {
